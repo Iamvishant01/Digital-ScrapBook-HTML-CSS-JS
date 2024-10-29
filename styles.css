@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f3f3f3;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin-top: 20px;
+    color: #333;
+}
+
+.controls {
+    margin: 20px 0;
+}
+
+#uploadImage, #addSticker, #caption, #addCaption {
+    margin-right: 10px;
+    padding: 10px;
+}
+
+.scrapbook {
+    width: 80%;
+    background-color: white;
+    border: 2px solid #ccc;
+    padding: 20px;
+    min-height: 500px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.drop-area {
+    border: 2px dashed #ccc;
+    padding: 50px;
+    width: 100%;
+    text-align: center;
+}
+
+.image-container {
+    margin: 10px;
+    position: relative;
+    display: inline-block;
+    cursor: move;
+}
+
+.image-container img {
+    max-width: 200px;
+    border: 5px solid #ccc;
+    border-radius: 10px;
+}
+
+.caption {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 5px;
+    border-radius: 0 0 10px 10px;
+}
+
+.sticker {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 50px;
+}
